@@ -1,7 +1,8 @@
 
 <%@ page contentType="text/html" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-
+<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,15 +21,17 @@
 <%--       <%="Welcome,"+user.getName()%>--%>
 <div class="container " >
     <div  class="col-4">
-        <form class="form-group" action="users" value="GET">
+        <form:form class="form-group" action="usersm" method="get" value="GET" modelAttribute="user">
             <label for="name">Name:</label>
-            <input class="form-control" type="text" name="name" value="">
+            <form:input class="form-control" type="text" path="name" placeholder="Enter name"  />
+            <form:errors path="name"/>
             <br>
             <label for="surname">Surname:</label>
-            <input class="form-control" type="text" name="surname" value="">
+            <form:input class="form-control" type="text" path="surname" placeholder="Enter surname"/>
+            <form:errors path="surname"/>
             <br>
-            <input class="btn btn-primary" type="submit" value="search" name="search">
-        </form>
+            <form:button class="btn btn-primary" type="submit"  >Search</form:button>
+        </form:form>
     </div>
     <div>
         <table class="table">
