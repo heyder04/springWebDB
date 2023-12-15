@@ -1,37 +1,31 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: HP
-  Date: 17-Nov-23
-  Time: 14:47
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html" pageEncoding="UTF-8"%>
-
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-  <link rel="stylesheet" href="assets/css/users.css?v=1">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>JSP Page</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+  <title>Admin Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
-<body>
- <form action="login" method="POST">
-   <div class="col-4 container login_fix ">
-     <h1 style="text-align: center">Login</h1>
-     <div class="form-group">
-       <label>Email address</label>
-       <input type="email" class="form-control" placeholder="Username" name="username">
-     </div>
-     <div class="form-group">
-       <label>Password</label>
-       <input type="password" class="form-control" placeholder="Password" name="password">
-     </div>
-     <br>
-     <button type="submit" class="btn btn-primary" name="login">Login</button>
-   </div>
+<body class="login_background">
 
- </form>
+<form action="login" method="POST">
+  <div class="col-4 container login_fix_">
+    <center>
+      <h1>Login:</h1>
+    </center>
+    <div class="form-group">
+      <label>Email address</label>
+      <input type="text" class="fadeIn second" name="username" placeholder="Username"/>
+    </div>
+    <div class="form-group">
+      <label>Password</label>
+      <input type="password"  class="fadeIn third" name="password" placeholder="Password"/>
+    </div>
+<%--    <input type="hidden" name="${_csrf.parameterName}"--%>
+<%--           value="${_csrf.token}" />--%>
+
+    <button type="submit" class="btn btn-primary" name="login">Login</button>
+  </div>
+</form>
+
 </body>
 </html>

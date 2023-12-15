@@ -67,10 +67,12 @@ public ModelAndView index(@RequestParam(value = "name",required = false)String n
 
 
 
-    @RequestMapping(method = RequestMethod.GET,value = "/login")
-    public String index(){
+
+    @RequestMapping(method = {RequestMethod.GET}, value="/login")//users?name=Sarkhan
+    public String loginPost(){
         return "login";
     }
+
     @ModelAttribute("user")
     public UserForm getEmptyUserForm(){
     return new UserForm(null,null,null);

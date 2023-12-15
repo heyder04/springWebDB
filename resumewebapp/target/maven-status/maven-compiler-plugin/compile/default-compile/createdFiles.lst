@@ -1,3 +1,6 @@
+com\company\service\CustomUserDetailsServiceImpl.class
 com\company\ResumewebappApplication.class
 com\company\controller\UserController.class
+WebSecurityConfig.class
+com\company\form\UserForm.class
 com\company\ServletInitializer.class

@@ -1,7 +1,10 @@
+package com.company;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration;
@@ -11,9 +14,10 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 @EnableWebSecurity
+@EnableGlobalMethodSecurity(prePostEnabled = true)
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
-    @Qualifier("userDetailsServce")
+    @Qualifier("userDetailsService")
     private UserDetailsService userDetailsService;
 
     @Autowired
@@ -34,20 +38,26 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http)throws Exception{
        http
-               .authorizeRequests().antMatchers("/login**").permitAll()
-               .and()
-               .formLogin()
-               .loginPage("/login")
-               .loginProcessingUrl("/login")
-               .defaultSuccessUrl("/usersm")
-               .permitAll()
-               .and()
-               .authorizeRequests().antMatchers("/users").hasAnyAuthority("ADMIN")
-               .and()
-               .authorizeRequests().anyRequest().hasAnyAuthority("ADMIN")
-               .and()
-               .logout().logoutSuccessUrl("/login").permitAll().
-               and().csrf().disable();
+                .authorizeRequests().antMatchers("/login**").permitAll()
+                .and()
+                .authorizeRequests().antMatchers("/usersm").hasAnyAuthority("ADMIN")
+                .and()
+//                .authorizeRequests().antMatchers("/foo").hasAnyAuthority("USER","ADMIN")
+//                .and()
+                .authorizeRequests().anyRequest().hasAnyAuthority("ADMIN")
+                .and()
+//                .logout()
+//                .logoutUrl("/logout")
+//                .logoutSuccessUrl("/login")
+//                .and()
+                .formLogin()
+                .loginPage("/login")
+                .defaultSuccessUrl("/users")
+                .permitAll()
+                .and()
+                .logout().logoutSuccessUrl("/login").permitAll()
+                .and().csrf().disable();
+
 
     }
 }
