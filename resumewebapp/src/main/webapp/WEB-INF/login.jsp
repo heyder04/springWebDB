@@ -5,7 +5,8 @@
   Time: 14:47
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html" pageEncoding="UTF-8"%>
+
 <html>
 <head>
   <link rel="stylesheet" href="assets/css/users.css?v=1">
@@ -16,12 +17,12 @@
 
 </head>
 <body>
- <form action="login" method="post">
+ <form action="login" method="POST">
    <div class="col-4 container login_fix ">
      <h1 style="text-align: center">Login</h1>
      <div class="form-group">
        <label>Email address</label>
-       <input type="email" class="form-control" placeholder="Email" name="email">
+       <input type="email" class="form-control" placeholder="Username" name="username">
      </div>
      <div class="form-group">
        <label>Password</label>

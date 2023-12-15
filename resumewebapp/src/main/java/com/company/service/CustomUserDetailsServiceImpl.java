@@ -22,7 +22,7 @@ public class CustomUserDetailsServiceImpl implements UserDetailsService {
            builder=org.springframework.security.core.userdetails.User.withUsername(email);
            builder.disabled(!true);
            builder.password("{noop}"+user.getPassword());
-           String[] authoritiesArr=new String[]{"ADMIN","USER"};
+           String[] authoritiesArr=new String[]{"USER","ADMIN"};
            builder.authorities(authoritiesArr);
 
            return builder.build();

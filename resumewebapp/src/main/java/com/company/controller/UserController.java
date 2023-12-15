@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
-import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
 /**
@@ -66,6 +65,12 @@ public ModelAndView index(@RequestParam(value = "name",required = false)String n
         return mv;
     }
 
+
+
+    @RequestMapping(method = RequestMethod.GET,value = "/login")
+    public String index(){
+        return "login";
+    }
     @ModelAttribute("user")
     public UserForm getEmptyUserForm(){
     return new UserForm(null,null,null);

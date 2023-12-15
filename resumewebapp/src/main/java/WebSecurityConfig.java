@@ -36,14 +36,18 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
        http
                .authorizeRequests().antMatchers("/login**").permitAll()
                .and()
-//               .authorizeRequests().antMatchers("/sign**").permitAll()
-//               .and()
-               .authorizeRequests().antMatchers("/users").hasAnyAuthority("USER","ADMIN")
+               .formLogin()
+               .loginPage("/login")
+               .loginProcessingUrl("/login")
+               .defaultSuccessUrl("/usersm")
+               .permitAll()
                .and()
-               .formLogin().permitAll()
+               .authorizeRequests().antMatchers("/users").hasAnyAuthority("ADMIN")
                .and()
-               .logout().logoutSuccessUrl("/login").permitAll();
-       //.and.csrf().disabled();
+               .authorizeRequests().anyRequest().hasAnyAuthority("ADMIN")
+               .and()
+               .logout().logoutSuccessUrl("/login").permitAll().
+               and().csrf().disable();
 
     }
 }
