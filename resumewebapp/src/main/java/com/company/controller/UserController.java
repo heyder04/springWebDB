@@ -73,6 +73,12 @@ public ModelAndView index(@RequestParam(value = "name",required = false)String n
         return "login";
     }
 
+
+    @RequestMapping(method = {RequestMethod.GET}, value="/logout")//users?name=Sarkhan
+    public String logoutPost(){
+        return "logout";
+    }
+
     @ModelAttribute("user")
     public UserForm getEmptyUserForm(){
     return new UserForm(null,null,null);
