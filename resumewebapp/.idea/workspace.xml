@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36891db5-5d29-4d9e-96cf-c925741fcf32" name="Changes" comment="" />
+    <list default="true" id="36891db5-5d29-4d9e-96cf-c925741fcf32" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/controller/UserRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbAppJPASpring/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbAppJPASpring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -40,13 +50,15 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/HP/Documents/NetBeansProjects/spring",
+    "last_opened_file_path": "C:/Users/HP/Documents/NetBeansProjects/spring/resumewebapp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
+    "spring.configuration.checksum": "a55944d47271fc32ecc9c1b49d97d483",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -55,7 +67,14 @@
       <recent name="C:\Users\HP\Documents\NetBeansProjects\spring\resumewebapp\src\main\resources\webapp" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.ResumewebappApplication">
+    <configuration name="ResumewebappApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="resumewebapp" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.ResumewebappApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ResumewebappApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="resumewebapp" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.resumewebapp.ResumewebappApplication" />
@@ -73,6 +92,7 @@
       <option name="presentableId" value="Default" />
       <updated>1702054069071</updated>
       <workItem from="1702054070329" duration="2348000" />
+      <workItem from="1703419180701" duration="632000" />
     </task>
     <servers />
   </component>
