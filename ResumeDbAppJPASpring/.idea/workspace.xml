@@ -5,8 +5,53 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ac49cbe-55c4-4e23-bb73-f42f5a3bae79" name="Changes" comment="c">
-      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/resumeRestful/controller/UserRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/resumeRestful/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/dto/ResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/dto/SkillDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/dto/UserSkillDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/security/AuthorizationServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/security/CustomCorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/security/ResourceServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/service/CustomUserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserRepositoryCustomImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/dao/impl/UserRepositoryCustomImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ResumeDbAppJPASpring-0.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/classpath.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/ResumeDbAppJpaSpringApplication$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/ResumeDbAppJpaSpringApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/impl/CountryDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/impl/EmploymentHistoryDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/impl/SkillDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/impl/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/impl/UserRepositoryCustom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/impl/UserRepositoryCustomImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/impl/UserSkillDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/inter/AbstractDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/inter/CountryDaoInter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/inter/EmploymentHistoryDaoInter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/inter/SkillDaoInter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/dao/inter/UserSkillDaoInter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/entity/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/entity/EmploymentHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/entity/Skill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/entity/UserSkill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/company/service/inter/UserServiceInter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resumeRestful/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../resumeRestful/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/controller/UserRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/controller/UserRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resumeRestful/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../resumeRestful/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resumewebapp/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../resumewebapp/.idea/jpa-buddy.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resumewebapp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../resumewebapp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resumewebapp/target/resumewebapp-0.0.1/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/../resumewebapp/target/resumewebapp-0.0.1/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,26 +99,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/HP/Documents/NetBeansProjects/spring/ResumeDbAppJPASpring/src/main/java/com/company/service",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.runner",
-    "spring.configuration.checksum": "ebf3eeb8f75c0f4989df6bd033aedc26",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/HP/Documents/NetBeansProjects/spring/ResumeDbAppJPASpring/src/main/java/com/company/service&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;ebf3eeb8f75c0f4989df6bd033aedc26&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\HP\Documents\NetBeansProjects\spring\ResumeDbAppJPASpring\src\main\java\com\company\service" />
@@ -141,6 +186,10 @@
       <updated>1701686833517</updated>
       <workItem from="1701686834672" duration="20362000" />
       <workItem from="1703419147188" duration="17000" />
+      <workItem from="1704466729809" duration="1116000" />
+      <workItem from="1704467945319" duration="1998000" />
+      <workItem from="1704776096366" duration="339000" />
+      <workItem from="1704817879821" duration="1685000" />
     </task>
     <task id="LOCAL-00001" summary="c">
       <created>1702054641608</created>
@@ -156,6 +205,9 @@
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
     <MESSAGE value="c" />
     <option name="LAST_COMMIT_MESSAGE" value="c" />
   </component>

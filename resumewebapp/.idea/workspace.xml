@@ -1,16 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="resumewebapp:war exploded" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36891db5-5d29-4d9e-96cf-c925741fcf32" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/controller/UserRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/dto/ResponseDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/dto/SkillDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/dto/UserSkillDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/security/AuthorizationServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/security/CustomCorsFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/security/ResourceServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/service/CustomUserDetailsServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbAppJPASpring/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbAppJPASpring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbAppJPASpring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/UserRepositoryCustomImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ResumeDbAppJPASpring/src/main/java/com/company/dao/impl/UserRepositoryCustomImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/ResumeDbAppJPASpring-0.0.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/classpath.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/ResumeDbAppJpaSpringApplication$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/ResumeDbAppJpaSpringApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/dao/impl/CountryDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/dao/impl/EmploymentHistoryDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/dao/impl/SkillDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/dao/impl/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/dao/impl/UserRepositoryCustom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/dao/impl/UserRepositoryCustomImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/dao/impl/UserSkillDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/dao/inter/AbstractDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/dao/inter/CountryDaoInter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/dao/inter/EmploymentHistoryDaoInter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/dao/inter/SkillDaoInter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/dao/inter/UserSkillDaoInter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/entity/Country.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/entity/EmploymentHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/entity/Skill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/entity/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/entity/UserSkill.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/service/impl/UserServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/classes/com/company/service/inter/UserServiceInter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ResumeDbAppJPASpring/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resumeRestful/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../resumeRestful/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/controller/UserRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/controller/UserRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/dto/UserDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../resumeRestful/src/main/java/com/company/dto/UserDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../resumeRestful/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../resumeRestful/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/resumewebapp-0.0.1/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/resumewebapp-0.0.1/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +65,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -52,7 +105,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/HP/Documents/NetBeansProjects/spring/resumewebapp",
+    "last_opened_file_path": "C:/Users/HP/Documents/NetBeansProjects/java-erp-backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -67,7 +120,7 @@
       <recent name="C:\Users\HP\Documents\NetBeansProjects\spring\resumewebapp\src\main\resources\webapp" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.ResumewebappApplication">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.80">
     <configuration name="ResumewebappApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="resumewebapp" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.ResumewebappApplication" />
@@ -82,6 +135,98 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Tomcat 9.0.80" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.80" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="resumewebapp:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/resumewebapp_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="29abdec3-e6a4-49d8-bf2c-83b2bc22480b" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="51546" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="resumewebapp:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.ResumewebappApplication" />
+      <item itemvalue="Spring Boot.ResumewebappApplication (1)" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.80" />
+    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,7 +237,8 @@
       <option name="presentableId" value="Default" />
       <updated>1702054069071</updated>
       <workItem from="1702054070329" duration="2348000" />
-      <workItem from="1703419180701" duration="632000" />
+      <workItem from="1703419180701" duration="1245000" />
+      <workItem from="1704821196033" duration="1875000" />
     </task>
     <servers />
   </component>

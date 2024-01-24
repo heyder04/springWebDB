@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Created-By: IntelliJ IDEA
 Built-By: HP
-Build-Jdk: Oracle OpenJDK version 1.8.0_202
+Build-Jdk: Oracle OpenJDK version 19
 Implementation-Title: resumewebapp
 Implementation-Version: 0.0.1
 Implementation-Vendor-Id: com.company

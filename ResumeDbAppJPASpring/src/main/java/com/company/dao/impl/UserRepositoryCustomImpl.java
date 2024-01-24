@@ -19,6 +19,9 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 import javax.transaction.Transactional;
+
+
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -150,9 +153,10 @@ public class UserRepositoryCustomImpl implements UserRepositoryCustom {
      em.merge(u);
      return true;
     }
-    
+    private  static BCryptPasswordEncoder crypt=new BCryptPasswordEncoder();
      @Override
     public boolean addUser(User u) {
+        u.setPassword(crypt.encode(u.getPassword()));
      em.persist(u);
      return true;
     }
